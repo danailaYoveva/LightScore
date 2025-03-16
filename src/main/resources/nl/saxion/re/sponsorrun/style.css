@@ -1,3 +1,16 @@
 .background {
     -fx-background-color: #fff;
 }
+
+.fields {
+    -fx-border-color: #ccc;
+    -fx-background-color: #fff;
+    -fx-border-radius: 25px;
+}
+
+.button {
+    -fx-border-radius: 25px;
+    -fx-border-color: #244065;
+    -fx-min-width: 80px;
+    -fx-background-color: #fff;
+}

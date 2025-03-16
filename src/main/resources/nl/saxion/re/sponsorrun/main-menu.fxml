@@ -10,6 +10,7 @@
       xmlns:fx="http://javafx.com/fxml/1"
       xmlns="http://javafx.com/javafx/17.0.2-ea"
       fx:controller="nl.saxion.re.sponsorrun.controllers.MainMenuController"
+      fx:id="vbox"
       stylesheets="@style.css"
       styleClass="background">
 
@@ -17,9 +18,14 @@
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
 
-    <ImageView fx:id="imageView" fitWidth="179" fitHeight="66">
-    </ImageView>
-    <Button onAction="#onFirstButtonClick" text="First button" />
-    <Button mnemonicParsing="false" onAction="#onSecondButtonClick" text="Second button" />
+
+    <ImageView fx:id="imageView" fitWidth="179" fitHeight="66"/>
+    <Label fx:id="welcomeText" text="Login for tournament organizers"/>
+
+    <TextField fx:id="nameField" styleClass="fields"/>
+    <TextField fx:id="passwordField" styleClass="fields"/>
+
+    <Button onAction="#onFirstButtonClick" text="Login" styleClass="button"/>
+<!--    <Button mnemonicParsing="false" onAction="#onSecondButtonClick" text="Second button" />-->
 
 </VBox>
