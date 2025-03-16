@@ -15,7 +15,6 @@ public class MainMenuController {
         imageView.setImage(new Image(getClass().getResource("/image/logo.png").toExternalForm()));
     }
 
-
     @FXML
     private Label welcomeText;
 
