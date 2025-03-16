@@ -4,12 +4,16 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
 <VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17.0.2-ea" fx:controller="nl.saxion.re.sponsorrun.controllers.MainMenuController" stylesheets="@style.css">
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
 
     <Label fx:id="welcomeText" text="Main menu" />
+    <ImageView fx:id="imageView" fitWidth="179" fitHeight="66">
+    </ImageView>
     <Button onAction="#onFirstButtonClick" text="First button" />
-   <Button mnemonicParsing="false" onAction="#onSecondButtonClick" text="Second button" />
+    <Button mnemonicParsing="false" onAction="#onSecondButtonClick" text="Second button" />
 </VBox>
