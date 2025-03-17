@@ -19,8 +19,8 @@
     </padding>
 
     <VBox spacing="10.0" alignment="CENTER">
-        <ImageView fx:id="imageView" fitWidth="255" fitHeight="94"/>
-        <Label fx:id="welcomeText" text="Login for tournament organizers"/>
+        <ImageView fx:id="imageView" fitWidth="255" fitHeight="110"/>
+        <Label fx:id="welcomeText" text="Login for tournament organizers" styleClass="main-label"/>
     </VBox>
 
     <VBox spacing="10.0" alignment="CENTER">
@@ -29,6 +29,8 @@
     </VBox>
 
     <Button onAction="#onFirstButtonClick" text="Login" styleClass="button"/>
-<!--    <Button mnemonicParsing="false" onAction="#onSecondButtonClick" text="Second button" />-->
+    <!--
+        <Button mnemonicParsing="false" onAction="#onSecondButtonClick" text="Second button" />
+    -->
 
 </VBox>

@@ -11,8 +11,23 @@
 }
 
 .button {
-    -fx-border-radius: 25px;
-    -fx-border-color: #244065;
     -fx-min-width: 80px;
     -fx-background-color: #fff;
+
+    -fx-border-radius: 25px;
+    -fx-border-color: #244065;
+    -fx-text-fill: #244065;
+
+    -fx-transition: all 0.3s ease-in-out;
+}
+
+.button:hover {
+    -fx-border-radius: 15px;
+
+    -fx-border-color: #ffcc00;
+    -fx-text-fill: #ffcc00;
+}
+
+.main-label {
+    -fx-font-size: 18px;
 }

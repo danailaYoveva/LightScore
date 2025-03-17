@@ -30,8 +30,6 @@ public class MainMenuController {
         passwordField.setPromptText("Password");
 
         vbox = new VBox();
-
-        Scene scene = new Scene(vbox, 750, 600);
     }
 
     @FXML
