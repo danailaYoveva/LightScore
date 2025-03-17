@@ -37,7 +37,7 @@ public class MainMenuController {
 
     @FXML
     protected void onFirstButtonClick() {
-        WindowHelper.openWindow("overview-screen.fxml", "Overview of politicians", 800, 600);
+        WindowHelper.openWindow("tournament-screen.fxml", "Tournaments", 750, 600);
     }
 
     @FXML
