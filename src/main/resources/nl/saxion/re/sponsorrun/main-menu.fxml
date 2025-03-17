@@ -15,11 +15,11 @@
       styleClass="background">
 
     <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+        <Insets bottom="20.0" left="220.0" right="220.0" top="20.0" />
     </padding>
 
 
-    <ImageView fx:id="imageView" fitWidth="179" fitHeight="66"/>
+    <ImageView fx:id="imageView" fitWidth="255" fitHeight="94"/>
     <Label fx:id="welcomeText" text="Login for tournament organizers"/>
 
     <TextField fx:id="nameField" styleClass="fields"/>

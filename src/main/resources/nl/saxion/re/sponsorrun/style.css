@@ -1,5 +1,7 @@
 .background {
     -fx-background-color: #fff;
+    -fx-min-width: 750;
+    -fx-min-height: 600;
 }
 
 .fields {
