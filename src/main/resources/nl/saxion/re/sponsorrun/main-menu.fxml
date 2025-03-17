@@ -6,7 +6,7 @@
 
 <?import javafx.scene.image.ImageView?>
 
-<VBox alignment="CENTER" spacing="10.0"
+<VBox alignment="CENTER" spacing="40.0"
       xmlns:fx="http://javafx.com/fxml/1"
       xmlns="http://javafx.com/javafx/17.0.2-ea"
       fx:controller="nl.saxion.re.sponsorrun.controllers.MainMenuController"
@@ -18,12 +18,15 @@
         <Insets bottom="20.0" left="220.0" right="220.0" top="20.0" />
     </padding>
 
+    <VBox spacing="10.0" alignment="CENTER">
+        <ImageView fx:id="imageView" fitWidth="255" fitHeight="94"/>
+        <Label fx:id="welcomeText" text="Login for tournament organizers"/>
+    </VBox>
 
-    <ImageView fx:id="imageView" fitWidth="255" fitHeight="94"/>
-    <Label fx:id="welcomeText" text="Login for tournament organizers"/>
-
-    <TextField fx:id="nameField" styleClass="fields"/>
-    <TextField fx:id="passwordField" styleClass="fields"/>
+    <VBox spacing="10.0" alignment="CENTER">
+        <TextField fx:id="nameField" styleClass="fields"/>
+        <TextField fx:id="passwordField" styleClass="fields"/>
+    </VBox>
 
     <Button onAction="#onFirstButtonClick" text="Login" styleClass="button"/>
 <!--    <Button mnemonicParsing="false" onAction="#onSecondButtonClick" text="Second button" />-->
