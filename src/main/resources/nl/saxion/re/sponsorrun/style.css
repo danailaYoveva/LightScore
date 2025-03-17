@@ -33,3 +33,19 @@
 .header-label {
     -fx-font-size: 30px;
 }
+
+.tournament-card {
+    -fx-background-color: #ffffff;
+    -fx-border-radius: 25px;
+    -fx-border-color: #cccccc;
+    -fx-padding: 0 0 5px 0;
+}
+
+.tournament-inner {
+    -fx-padding: 0 10px 10px 10px;
+}
+
+.tournament-image {
+    -fx-background-radius: 25px 25px 0 0;
+    -fx-border-radius: 25px 25px 0 0;
+}

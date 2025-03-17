@@ -33,7 +33,7 @@
                 <Button styleClass="button" onAction="#onFirstButtonClick" text="Create Tournament" />
             </HBox>
 
-            <GridPane fx:id="tournamentGrid" hgap="20" vgap="20"/>
+            <GridPane fx:id="tournamentGrid" hgap="20" vgap="20" />
 
         </VBox>
     </children>

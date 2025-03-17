@@ -1,12 +1,16 @@
 package nl.saxion.re.sponsorrun.controllers;
 
 import javafx.fxml.FXML;
+import javafx.geometry.Pos;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.GridPane;
+import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
+import javafx.scene.shape.Polygon;
+import javafx.scene.shape.Rectangle;
 import nl.saxion.re.sponsorrun.data.Data;
 import nl.saxion.re.sponsorrun.util.WindowHelper;
 
@@ -52,7 +56,7 @@ public class TournamentScreenController {
             tournamentGrid.add(card, column, row);
 
             column++;
-            if (column >= 3) { // 3 columns per row
+            if (column >= 3) {
                 column = 0;
                 row++;
             }
@@ -61,21 +65,27 @@ public class TournamentScreenController {
 
     private VBox createTournamentCard(Tournament t) {
         VBox card = new VBox(10);
-
-        card.setStyle("-fx-background-color: #eeeeee; -fx-padding: 10px; -fx-border-radius: 25px; -fx-border-color: #cccccc;");
+        card.getStyleClass().add("tournament-card");
         card.setPrefSize(200, 150);
 
-        ImageView imageView = new ImageView(new Image(getClass().getResource("/image/" + t.image).toExternalForm()));
-        imageView.setStyle("");
+        Image img = new Image(getClass().getResource("/image/" + t.image).toExternalForm());
+
+        ImageView imageView = new ImageView(img);
         imageView.setFitWidth(200);
-        imageView.setFitHeight(100);
+        imageView.setFitHeight(142);
+        imageView.getStyleClass().add("tournament-image");
+
+        HBox innerCard = new HBox(10);
+        innerCard.setAlignment(Pos.CENTER);
+        innerCard.getStyleClass().add("tournament-inner");
 
         Label nameLabel = new Label(t.name);
         Button viewButton = new Button("View");
 
         viewButton.setOnAction(e -> openTournamentDetails(t));
 
-        card.getChildren().addAll(imageView, nameLabel, viewButton);
+        innerCard.getChildren().addAll(nameLabel, viewButton);
+        card.getChildren().addAll(imageView, innerCard);
         return card;
     }
 
