@@ -4,11 +4,15 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="750.0" prefWidth="600.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nl.saxion.re.sponsorrun.controllers.AnotherScreenController" styleClass="background">
+<AnchorPane prefHeight="750.0" prefWidth="600.0" styleClass="background" stylesheets="@style.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nl.saxion.re.sponsorrun.controllers.AnotherScreenController">
    <children>
-      <DatePicker fx:id="picker" layoutX="45.0" layoutY="259.0" styleClass="fields" prefWidth="318" />
+      <DatePicker fx:id="pickerDate" layoutX="45.0" layoutY="259.0" prefWidth="318" styleClass="fields" />
       <ComboBox fx:id="sport" layoutX="387.0" layoutY="188.0" prefWidth="318.0" styleClass="fields" />
       <TextField fx:id="nameField" layoutX="45.0" layoutY="188.0" prefWidth="318" styleClass="fields" />
       <Text layoutX="246.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="header-label" text="Create a tournament" />
+      <DatePicker fx:id="pickerRegistration" layoutX="387" layoutY="259" prefWidth="318" styleClass="fields" />
+      <TextField fx:id="maxTeams" layoutX="45" layoutY="330" prefWidth="318" styleClass="fields" />
+      <TextField fx:id="address" layoutX="387" layoutY="330" prefWidth="318" styleClass="fields" />
+      <TextArea fx:id="description" prefHeight="100.0" prefWidth="660.0" layoutX="45" layoutY="401" styleClass="fields"/>
    </children>
 </AnchorPane>

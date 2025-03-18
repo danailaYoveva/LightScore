@@ -3,12 +3,13 @@ package nl.saxion.re.sponsorrun.controllers;
 import javafx.fxml.FXML;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.DatePicker;
+import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 
 public class AnotherScreenController {
 
     @FXML
-    public DatePicker picker;
+    public DatePicker pickerDate;
 
     @FXML
     public TextField nameField;
@@ -17,9 +18,25 @@ public class AnotherScreenController {
     public ComboBox sport;
 
     @FXML
+    public DatePicker pickerRegistration;
+
+    @FXML
+    public TextField maxTeams;
+
+    @FXML
+    public TextField address;
+
+    @FXML
+    public TextArea description;
+
+    @FXML
     public void initialize(){
         nameField.setPromptText("Name");
         sport.setPromptText("Sport");
-        picker.setPromptText("Date");
+        pickerDate.setPromptText("Date");
+        pickerRegistration.setPromptText("Registration end");
+        maxTeams.setPromptText("Max. teams");
+        address.setPromptText("Address");
+        description.setPromptText("Description");
     }
 }
