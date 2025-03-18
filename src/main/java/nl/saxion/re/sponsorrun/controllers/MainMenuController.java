@@ -39,9 +39,4 @@ public class MainMenuController {
     protected void onFirstButtonClick() {
         WindowHelper.openWindow("tournament-screen.fxml", "Tournaments", 750, 600);
     }
-
-    @FXML
-    protected void onSecondButtonClick() {
-        WindowHelper.openWindow("another-screen.fxml", "Wow, such empty", 800, 600);
-    }
 }

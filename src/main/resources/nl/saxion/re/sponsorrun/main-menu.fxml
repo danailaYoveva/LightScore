@@ -29,8 +29,5 @@
     </VBox>
 
     <Button onAction="#onFirstButtonClick" text="Login" styleClass="button"/>
-    <!--
-        <Button mnemonicParsing="false" onAction="#onSecondButtonClick" text="Second button" />
-    -->
 
 </VBox>
