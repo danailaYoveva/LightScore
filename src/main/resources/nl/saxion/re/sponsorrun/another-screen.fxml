@@ -2,11 +2,13 @@
 
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="750.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nl.saxion.re.sponsorrun.controllers.AnotherScreenController" stylesheets="@style.css">
+<AnchorPane prefHeight="750.0" prefWidth="600.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nl.saxion.re.sponsorrun.controllers.AnotherScreenController">
    <children>
       <DatePicker fx:id="picker" layoutX="74.0" layoutY="180.0" />
       <ComboBox layoutX="369.0" layoutY="180.0" prefWidth="150.0" />
       <TextField layoutX="162.0" layoutY="263.0" styleClass="fields" />
+      <Text layoutX="246.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="header-label" text="Create a tournament" />
    </children>
 </AnchorPane>
