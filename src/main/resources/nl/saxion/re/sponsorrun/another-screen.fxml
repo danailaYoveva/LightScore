@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
@@ -13,6 +14,9 @@
       <DatePicker fx:id="pickerRegistration" layoutX="387" layoutY="259" prefWidth="318" styleClass="fields" />
       <TextField fx:id="maxTeams" layoutX="45" layoutY="330" prefWidth="318" styleClass="fields" />
       <TextField fx:id="address" layoutX="387" layoutY="330" prefWidth="318" styleClass="fields" />
-      <TextArea fx:id="description" prefHeight="100.0" prefWidth="660.0" layoutX="45" layoutY="401" styleClass="fields"/>
+      <TextArea fx:id="description" layoutX="45" layoutY="401" prefHeight="100.0" prefWidth="660.0" styleClass="fields" />
+      <ImageView fx:id="logo" fitHeight="70.0" fitWidth="200.0" layoutX="30" layoutY="10" pickOnBounds="true" preserveRatio="true" />
+      <Button layoutX="450" layoutY="32" mnemonicParsing="false" prefHeight="40" prefWidth="120" text="Tournaments" />
+      <Button layoutX="600" layoutY="32" mnemonicParsing="false" prefHeight="40" prefWidth="120" text="Log Out" styleClass="button"/>
    </children>
 </AnchorPane>
