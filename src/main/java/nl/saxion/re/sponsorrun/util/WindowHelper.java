@@ -5,6 +5,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Control;
 import javafx.stage.Stage;
+import javafx.stage.Window;
 import nl.saxion.re.sponsorrun.SponsorRunApp;
 
 public class WindowHelper {
@@ -51,6 +52,26 @@ public class WindowHelper {
         Stage stage = (Stage) randomControlOnWindow.getScene().getWindow();
         stage.close();
     }
+
+    public static void closeAllExceptMain() {
+        Stage mainStage = null;
+
+        // Find the primary stage (first opened window)
+        for (Window window : Stage.getWindows()) {
+            if (window instanceof Stage) {
+                mainStage = (Stage) window;
+                break; // Assume the first found is the main window
+            }
+        }
+
+        // Close all other windows
+        for (Window window : Stage.getWindows()) {
+            if (window instanceof Stage && window != mainStage) {
+                ((Stage) window).close();
+            }
+        }
+    }
+
 
     /***
      * Show a popup dialog with a message

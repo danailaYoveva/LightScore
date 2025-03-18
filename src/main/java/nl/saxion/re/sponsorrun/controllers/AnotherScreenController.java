@@ -1,12 +1,10 @@
 package nl.saxion.re.sponsorrun.controllers;
 
 import javafx.fxml.FXML;
-import javafx.scene.control.ComboBox;
-import javafx.scene.control.DatePicker;
-import javafx.scene.control.TextArea;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import nl.saxion.re.sponsorrun.util.WindowHelper;
 
 public class AnotherScreenController {
 
@@ -33,6 +31,14 @@ public class AnotherScreenController {
 
     @FXML
     public ImageView logo;
+
+    @FXML
+    public Button logOutButton;
+
+    @FXML
+    public void logOut(){
+        WindowHelper.closeAllExceptMain();
+    }
 
     @FXML
     public void initialize(){
